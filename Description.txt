@@ -1,0 +1,19 @@
+NT_PCBA_80 - Version 7:
+Changing the positions of the legs to match the new arrangement.
+contain project that output PWM, switch full matrix (60 rows & 30 cols & 3 reference), measure adc.
+every second print the matrix that measured through target usb (D+ D-)
+option to select if measure all the matrix or choose one reference cap.
+option to switch between npn and pnp (upside down the signal to open the transostor).
+option to not reset the cap.
+communicate with atmel3209 with SPI protocol.
+option to choose one pixel.
+option to open and close switches by commands.
+changed row and col ordering to the right order.
+add option to send default message to the atmega,
+and in each message, the atmega change the col one by another.
+by default, spi message contain which specific row to open/close.
+fix spi problem by changing to spi phase to 1.
+print the micro details when press 'D'
+add 2 LEDs blink while running.
+Goes to sleep when disconnected from the MAT, wakes up when reconnected.
+changed row ordering to the right order for suitable the MAT.
